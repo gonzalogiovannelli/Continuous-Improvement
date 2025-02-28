@@ -1,8 +1,8 @@
 # Findings Summary
 
-This section highlights the key inefficiencies and bottlenecks identified during the analysis phase. The goal was to pinpoint areas where improvements could have the most significant impact on **production efficiency, quality, and maintenance**.
+This section highlights key inefficiencies identified during the **Analyze** phase of the **DMAIC** process. The project began with a **data analysis in Excel**, tracking **daily/hourly production and downtime** to determine major bottlenecks.
 
-## 🔍 Key Bottlenecks Identified
+## 🔍 **Key Bottlenecks Identified (Analyze Phase)**
 
 ### **1️⃣ Production Issues**
 - **Excessive downtime** due to **workforce inefficiencies and unstructured rest breaks**.
@@ -19,10 +19,11 @@ This section highlights the key inefficiencies and bottlenecks identified during
 - **Inconsistent ingredient mixing**, leading to variability in product quality.
 - **Potential contamination risks** due to hydraulic oil leaks in machinery.
 
-## 📊 Data-Driven Analysis
+## 📊 **Data-Driven Analysis (DMAIC - Measure & Analyze)**
 To validate these issues, the following analytical methods were used:
+- **Excel Data Analysis** → Collected daily/hourly data on production and downtime.
 - **Pareto Analysis** → Identified the most critical causes of downtime.
 - **Process Flow Mapping** → Visualized inefficiencies in production sequences.
 - **Workforce Utilization Study** → Assessed operator workload and time allocation.
 
-The next steps involve implementing targeted solutions, prioritizing changes based on impact and feasibility.
+The next steps involve implementing targeted solutions under the **Improve** phase.
