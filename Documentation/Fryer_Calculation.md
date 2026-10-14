@@ -29,6 +29,10 @@ where:
 - **T_Fi = 180°C**, **T_Fo = 172°C** (Fryer Inlet/Outlet)  
 - **T_Ci = 165°C**, **T_Co = 190°C** (Boiler Inlet/Outlet)  
 
+> **What was actually done:** these were the options the study put forward. The fix that went in
+> was a recirculation pump of about USD 500, so that the heat the boilers already produced reached
+> the fryer. No new boiler was needed.
+
 ### **🔧 Proposed Solutions**
 1️⃣ **Pipe System Optimization**  
    - Replace **current pipes with stainless steel insulated pipes** to reduce heat loss.  

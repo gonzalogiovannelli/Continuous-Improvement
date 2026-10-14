@@ -1,53 +1,69 @@
-# 📈 Continuous Improvement in Food Production  
+# Continuous improvement on a food production line
 
-This project focuses on optimizing **production efficiency, reducing downtime, and improving heat transfer** in a food manufacturing environment. Using **DMAIC, Lean, TPM, and JIT principles**, we analyzed bottlenecks, implemented data-driven solutions, and structured an Agile backlog for continuous improvement.  
+DMAIC on a breaded-food line (fish, chicken, vegetable and cheese products) at a food
+manufacturer, 2016 to 2018. The company is not named; the production data is real.
 
-## 🔍 **Key Areas of Focus**
-- **Process Optimization** – Identifying inefficiencies and improving workflow.  
-- **Workforce & Scheduling** – Optimizing operator rest periods to minimize downtime.  
-- **Heat Transfer Efficiency** – Improving fryer heating performance and reducing energy loss.  
-- **Data-Driven Decision Making** – Using historical production data, KPIs, and Pareto analysis.  
+## The problem, as it was given
 
----
+I was hired to plan an expansion: set up a second line, buy a third one and triple the
+workforce, to go from about 6 tonnes a day to 18-20. Five days in, I asked to write a
+different report instead, because the target looked reachable with what was already
+installed.
 
-## ⚠ **Main Downtime Causes (Based on Pareto Analysis)**
-1️⃣ **Workforce Rest Periods ("Cuartos")** – Unstructured breaks affecting production continuity.  
-2️⃣ **Product Changeovers** – Long transitions between different product batches.  
-3️⃣ **Fryer Temperature Variability** – Oil heat fluctuations causing delays and quality issues.  
+## Measure and analyse
 
-## 📂 **Project Documentation**
-| File | Description |
-|------|------------|
-| 📄 [`Methodology.md`](Documentation/Methodology.md) | Overview of the DMAIC approach and Lean methodologies used. |
-| 📄 [`Findings_Summary.md`](Documentation/Findings_Summary.md) | Key bottlenecks and inefficiencies identified in the process. |
-| 📄 [`KPI_Definition.md`](Documentation/KPI_Definition.md) | Performance indicators used to measure success. |
-| 📄 [`Product_Backlog.md`](Documentation/Product_Backlog.md) | Structured backlog for managing continuous improvement tasks. |
-| 📄 [`Process_Flow.md`](Documentation/Process_Flow.md) | Step-by-step breakdown of the production process. |
-| 📄 [`Fryer_Calculation.md`](Documentation/Fryer_Calculation.md) | Heat transfer analysis and proposed fryer optimizations. |
+Three weeks, from 1 to 23 December 2016:
 
----
+- Three months of production sheets
+- Security camera footage, to compare recorded stops with real ones: real stops exceeded
+  recorded ones by 24%
+- A Pareto of downtime: rest breaks, product changeovers, oil temperature and the forming
+  machine
+- A methods-and-times study per station, and an energy balance of the boilers
 
-## 📊 **Visuals & Data Analysis**
-| File | Description |
-|------|------------|
-| 📊 [`Pareto.PNG`](Visuals/Pareto.PNG) | Pareto chart identifying major downtime causes. |
-| 📊 [`Workforce Stops.PNG`](Visuals/Workforce%20Stops.PNG) | Analysis of workforce stops and efficiency. |
-| 📊 [`Before-After.png`](Visuals/Before-After.png) | Production vs. Stop Time trends before and after improvements. |
-| 📊 [`Before_After_Comparison.xlsx`](Visuals/Before_After_Comparison.xlsx) | Historical data of production and stop times over time. |
-| 📊 [`Fryer_Calculations.xlsx`](Visuals/Fryer_Calculations.xlsx) | Heat transfer formulas, power requirements, and efficiency analysis. |
+The problem was redefined: the plant did not need another line, it needed the one it had
+to work.
 
----
+## Improve: four levers, chained
 
-## ✅ **Results & Impact**
-📌 **Production Increased:** Significant rise in production output after improvements.  
-📌 **Downtime Reduced:** Major drop in unnecessary stops and inefficiencies.  
-📌 **Workforce Efficiency:** Optimized scheduling of rest breaks for better productivity.  
-📌 **Heat Transfer Optimization:** Improved fryer efficiency by reducing heat loss and stabilizing oil temperature.  
-📌 **Process Standardization:** Enhanced quality control and preventive maintenance.  
+| Lever | Effect | Cost |
+|---|---|---|
+| Reorganise rest breaks, 7 to 6 operators per shift | Running time from 826 to about 1,070 min a day | 0 |
+| Redesign the moulds: 5 pieces per stroke instead of 3 | Flow from 8.06 to 13.44 kg/min, with the old machine | ~USD 100 |
+| A recirculation pump: only 32% of the boilers' heat reached the fryer | The fryer can cook the new flow, without a new boiler | ~USD 500 |
+| Produce in raw-material campaigns: all chicken, then all fish, then vegetable, then cheese | Each avoided raw-material change saves 1.5 h of deep cleaning | 0 |
 
----
+None of them works alone: more flow without running time is not produced, more running
+time without flow hits the forming machine, and more flow without heat is not cooked.
 
-## 🔥 **Future Considerations**
-- Further monitoring of KPIs and potential automation for data analysis.  
-- Implementing real-time **temperature control in the fryer** to improve heat consistency.  
-- Additional workforce **training and workflow automation** to reduce manual inefficiencies.  
+## Control
+
+Production was tracked on paper and in personal spreadsheets. I set up an online
+production record, with its first two KPIs: without one version of the data there is no
+Pareto, no KPI, and no way to tell whether an improvement worked.
+
+## Result
+
+| | Before (Dec 2016) | After (Jan 2018) |
+|---|---|---|
+| Daily output | 6,113 kg on average | about 15,000 kg |
+| Line operators, two shifts | 14 | 12 |
+| Output per person per day | 0.44 t | 1.25 t |
+
+About USD 600 of changes, instead of the new lines that had been planned.
+
+`Visuals/Before-After.png` covers September 2016 to May 2017, the first months after the
+changes. The 15 tonnes is the figure for January 2018.
+
+## In this repo
+
+| File | What it is |
+|---|---|
+| [`Documentation/Findings_Summary.md`](Documentation/Findings_Summary.md) | The bottlenecks found in the analysis |
+| [`Documentation/Process_Flow.md`](Documentation/Process_Flow.md) | The line, step by step |
+| [`Documentation/Fryer_Calculation.md`](Documentation/Fryer_Calculation.md) | The heat-transfer calculation behind the 32% |
+| [`Visuals/Pareto.PNG`](Visuals/Pareto.PNG) | Pareto of downtime causes |
+| [`Visuals/Workforce Stops.PNG`](Visuals/Workforce%20Stops.PNG) | Stops caused by rest breaks |
+| [`Visuals/Before-After.png`](Visuals/Before-After.png) | Production and stop time, before and after |
+| [`Visuals/Before_After_Comparison.xlsx`](Visuals/Before_After_Comparison.xlsx) | The data behind that chart |
+| [`Visuals/Fryer_Calculations.xlsx`](Visuals/Fryer_Calculations.xlsx) | The fryer calculation |
